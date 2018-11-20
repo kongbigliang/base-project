@@ -55,16 +55,14 @@
 		<!-- sql解析插件 -->
 		<jsqlparser.version>0.9.5</jsqlparser.version>
 		<!-- fastjson -->
-		<fastjson.version>1.1.40</fastjson.version>
-		<!-- gson -->
-		<gson.version>2.2.4</gson.version>
+		<fastjson.version>1.2.47</fastjson.version>
 		<!-- jackson -->
-		<jackson.version>2.5.0</jackson.version>
+		<jackson.version>2.9.0</jackson.version>
 		<org.codehaus.jackson.version>1.9.5</org.codehaus.jackson.version>
 		<!-- druid -->
 		<druid.version>1.0.25</druid.version>
 		<!-- spring -->
-		<spring.version>4.0.8.RELEASE</spring.version>
+		<spring.version>4.3.18.RELEASE</spring.version>
 		<!-- poi -->
 		<poi.version>3.15</poi.version>
 	</properties>
@@ -118,13 +116,6 @@
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
 			<version>${fastjson.version}</version>
-		</dependency>
-
-		<!-- gson -->
-		<dependency>
-			<groupId>com.google.code.gson</groupId>
-			<artifactId>gson</artifactId>
-			<version>${gson.version}</version>
 		</dependency>
 
 		<!-- 返回值为json格式 -->
