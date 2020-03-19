@@ -57,7 +57,7 @@
 		<!-- fastjson -->
 		<fastjson.version>1.2.47</fastjson.version>
 		<!-- jackson -->
-		<jackson.version>2.9.0</jackson.version>
+		<jackson.version>2.10.3</jackson.version>
 		<org.codehaus.jackson.version>1.9.5</org.codehaus.jackson.version>
 		<!-- druid -->
 		<druid.version>1.0.25</druid.version>
