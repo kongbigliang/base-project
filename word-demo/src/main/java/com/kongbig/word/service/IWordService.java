@@ -11,7 +11,7 @@ import java.util.List;
 public interface IWordService {
 
     /**
-     * 切分单词
+     * splitSentence
      *
      * @param sentence
      * @return
@@ -19,7 +19,7 @@ public interface IWordService {
     ResultDto splitSentence(String sentence);
 
     /**
-     * 按用户自定义的字典切分单词
+     * splitSentenceByUser
      *
      * @param sentence
      * @return
@@ -27,7 +27,7 @@ public interface IWordService {
     ResultDto splitSentenceByUser(String sentence);
 
     /**
-     * 按用户自定义和原有的字典切分单词
+     * splitSentenceByUserAndLocal
      *
      * @param sentence
      * @return
@@ -35,7 +35,7 @@ public interface IWordService {
     ResultDto splitSentenceByUserAndLocal(String sentence);
 
     /**
-     * 用户自定义字典
+     * saveUserWord
      *
      * @param wordList
      * @return

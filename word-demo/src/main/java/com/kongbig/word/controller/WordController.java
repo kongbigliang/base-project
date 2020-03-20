@@ -18,32 +18,32 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/word")
-@Api(value = "单词", tags = "单词")
+@Api(value = "word", tags = "word")
 public class WordController {
 
     @Autowired
     private IWordService wordService;
 
     @GetMapping("/splitSentence")
-    @ApiOperation(value = "切分单词", notes = "切分单词")
+    @ApiOperation(value = "splitSentence", notes = "splitSentence")
     public ResultDto splitSentence(String sentence) {
         return wordService.splitSentence(sentence);
     }
 
     @GetMapping("/splitSentenceByUser")
-    @ApiOperation(value = "按用户自定义的字典切分单词", notes = "按用户自定义的字典切分单词")
+    @ApiOperation(value = "splitSentenceByUser", notes = "splitSentenceByUser")
     public ResultDto splitSentenceByUser(String sentence) {
         return wordService.splitSentenceByUser(sentence);
     }
 
     @GetMapping("/splitSentenceByUserAndLocal")
-    @ApiOperation(value = "按用户自定义和原有的字典切分单词", notes = "按用户自定义和原有的字典切分单词")
+    @ApiOperation(value = "splitSentenceByUserAndLocal", notes = "splitSentenceByUserAndLocal")
     public ResultDto splitSentenceByUserAndLocal(String sentence) {
         return wordService.splitSentenceByUserAndLocal(sentence);
     }
 
     @PostMapping("/saveUserWord")
-    @ApiOperation(value = "用户自定义字典", notes = "用户自定义字典")
+    @ApiOperation(value = "saveUserWord", notes = "saveUserWord")
     public ResultDto saveUserWord(List<String> wordList){
         return wordService.saveUserWord(wordList);
     }
