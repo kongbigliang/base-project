@@ -1,16 +1,12 @@
 package com.kongbig.word.controller;
 
 import com.kongbig.word.common.dto.ResultDto;
+import com.kongbig.word.dto.WordDto;
 import com.kongbig.word.service.IWordService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author kongbig
@@ -44,8 +40,8 @@ public class WordController {
 
     @PostMapping("/saveUserWord")
     @ApiOperation(value = "saveUserWord", notes = "saveUserWord")
-    public ResultDto saveUserWord(List<String> wordList){
-        return wordService.saveUserWord(wordList);
+    public ResultDto saveUserWord(@RequestBody WordDto dto) {
+        return wordService.saveUserWord(dto.getWordList());
     }
 
 }

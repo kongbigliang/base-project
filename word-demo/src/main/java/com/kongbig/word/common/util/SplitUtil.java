@@ -22,6 +22,12 @@ public class SplitUtil {
      * @return
      */
     private static List<String> getBreakResult(String s, List<String> wordDict, int offset) {
+        if (offset == s.length()) {
+            List<String> res = new ArrayList<>();
+            res.add("");
+            return res;
+        }
+
         List<String> resultList = new ArrayList<>();
         for (String word : wordDict) {
             if (word.equals(s.substring(offset, Math.min(s.length(), offset + word.length())))) {
